@@ -1,0 +1,36 @@
+.copyright__text {
+  display: block;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+  padding-top: 6px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 11px;
+  }
+}
+
+
+.copyright__link {
+  text-decoration: none;
+  display: contents;
+
+  &:hover,
+  &:focus {
+    stroke: #68b738;
+    fill: #68b738;
+  }
+}
+
+.copyright {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 43px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
