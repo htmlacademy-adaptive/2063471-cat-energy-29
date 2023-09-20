@@ -1,0 +1,124 @@
+.advantages {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 45px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px 47px 110px;
+  }
+}
+
+.advantages__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+}
+
+.advantages__description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 57px;
+    width: 204px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 54px 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.advantages__item-image {
+  flex-shrink: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item-1 {
+    min-width: 230px;
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 125px 0;
+
+    @media (min-width: @desktop-width) {
+      padding-right: 17px;
+    }
+  }
+
+  .advantages__item-2 {
+    min-width: 246px;
+    background-image: url("../img/2.png");
+    background-repeat: no-repeat;
+    background-position: 125px 0;
+  }
+
+  .advantages__item-3 {
+    min-width: 247px;
+    background-image: url("../img/3.png");
+    background-repeat: no-repeat;
+    background-position: 125px 0;
+  }
+
+  .advantages__item-4 {
+    min-width: 249px;
+    background-image: url("../img/4.png");
+    background-repeat: no-repeat;
+    background-position: 125px 0;
+  }
+}
